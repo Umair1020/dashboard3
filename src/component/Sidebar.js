@@ -172,7 +172,7 @@ const Sidebar = () => {
                                     to="/"
                                     className="nav-link"
                                     onClick={() => handleSetActiveLink('home')}
-                                    style={{ textDecoration: "none", display: "flex", alignItems: "center", color: "#000" }}
+                                    style={{ textDecoration: "none",color: "#000", display: "flex", alignItems: "center", color: "#000" }}
                                 >
                                     <Home />
                                     <span style={{ marginLeft: "15px" }}>Home</span>
@@ -184,7 +184,7 @@ const Sidebar = () => {
                                     to="/agentrequest"
                                     className="nav-link collapsed"
                                     onClick={() => handleSetActiveLink('agents')}
-                                    style={{ display: "flex", alignItems: "center" }}
+                                    style={{ display: "flex",color: "#000", alignItems: "center" }}
                                 >
                                     <People />
                                     <span style={{ marginLeft: "15px" }}>Agents Requests</span>
@@ -195,7 +195,7 @@ const Sidebar = () => {
                                     to="/selfapplied"
                                     className="nav-link collapsed"
                                     onClick={() => handleSetActiveLink('selfapplied')}
-                                    style={{ display: "flex", alignItems: "center" }}
+                                    style={{ display: "flex", color: "#000",alignItems: "center" }}
                                 >
                                     <People />
                                     <span style={{ marginLeft: "15px" }}>self Applied</span>
@@ -206,7 +206,7 @@ const Sidebar = () => {
                                     to="/ourmaid"
                                     className="nav-link collapsed"
                                     onClick={() => handleSetActiveLink('ourmaid')}
-                                    style={{ display: "flex", alignItems: "center" }}
+                                    style={{ display: "flex",color: "#000", alignItems: "center" }}
                                 >
                                     <FaRegUser />
                                     <span style={{ marginLeft: "15px" }}>Our Maids</span>
@@ -217,7 +217,7 @@ const Sidebar = () => {
                                     to="/plantedinterview"
                                     className="nav-link collapsed"
                                     onClick={() => handleSetActiveLink('plantedinterview')}
-                                    style={{ display: "flex", alignItems: "center" }}
+                                    style={{ display: "flex",color: "#000", alignItems: "center" }}
                                 >
                                     <IoMdDocument />
                                     <span style={{ marginLeft: "15px" }}>Planed Interviews</span>
@@ -228,7 +228,7 @@ const Sidebar = () => {
                                     to="/access"
                                     className="nav-link collapsed"
                                     onClick={() => handleSetActiveLink('access')}
-                                    style={{ display: "flex", alignItems: "center" }}
+                                    style={{ display: "flex",color: "#000" , alignItems: "center" }}
                                 >
                                     <FaAccessibleIcon />
                                     <span style={{ marginLeft: "15px" }}>Access</span>
@@ -236,7 +236,7 @@ const Sidebar = () => {
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link collapsed my-4" href="">
+                                <a className="nav-link collapsed my-4" href="" style={{color: "#000"}}>
                                     <FaLockOpen />
                                     <span style={{ marginLeft: "15px" }}>Login</span>
                                 </a>
@@ -314,7 +314,7 @@ const Sidebar = () => {
                                     to="/"
                                     className="nav-link"
                                     onClick={() => handleSetActiveLink('home')}
-                                    style={{ textDecoration: "none", display: "flex", alignItems: "center", color: "#000" }}
+                                    style={{ textDecoration: "none", display: "flex", alignItems: "center",  color: "#000" }}
                                 >
                                     <Home />
                                     <span style={{ marginLeft: "15px" }}>Home</span>
@@ -326,7 +326,7 @@ const Sidebar = () => {
                                     to="/agentrequest"
                                     className="nav-link collapsed"
                                     onClick={() => handleSetActiveLink('agents')}
-                                    style={{ display: "flex", alignItems: "center" }}
+                                    style={{ display: "flex", alignItems: "center" , color: "#000"  }}
                                 >
                                     <People />
                                     <span style={{ marginLeft: "15px" }}>Agents Requests</span>
@@ -337,7 +337,7 @@ const Sidebar = () => {
                                     to="/selfapplied"
                                     className="nav-link collapsed"
                                     onClick={() => handleSetActiveLink('selfapplied')}
-                                    style={{ display: "flex", alignItems: "center" }}
+                                    style={{ display: "flex", alignItems: "center" , color: "#000"  }}
                                 >
                                     <People />
                                     <span style={{ marginLeft: "15px" }}>self Applied</span>
@@ -348,7 +348,7 @@ const Sidebar = () => {
                                     to="/ourmaid"
                                     className="nav-link collapsed"
                                     onClick={() => handleSetActiveLink('ourmaid')}
-                                    style={{ display: "flex", alignItems: "center" }}
+                                    style={{ display: "flex", alignItems: "center" , color: "#000"  }}
                                 >
                                     <FaRegUser />
                                     <span style={{ marginLeft: "15px" }}>Our Maids</span>
@@ -359,7 +359,7 @@ const Sidebar = () => {
                                     to="/plantedinterview"
                                     className="nav-link collapsed"
                                     onClick={() => handleSetActiveLink('plantedinterview')}
-                                    style={{ display: "flex", alignItems: "center" }}
+                                    style={{ display: "flex", alignItems: "center" , color: "#000"  }}
                                 >
                                     <IoMdDocument />
                                     <span style={{ marginLeft: "15px" }}>Planed Interviews</span>
@@ -370,7 +370,7 @@ const Sidebar = () => {
                                     to="/access"
                                     className="nav-link collapsed"
                                     onClick={() => handleSetActiveLink('access')}
-                                    style={{ display: "flex", alignItems: "center" }}
+                                    style={{ display: "flex", alignItems: "center" , color: "#000"  }}
                                 >
                                     <FaAccessibleIcon />
                                     <span style={{ marginLeft: "15px" }}>Access</span>
