@@ -50,9 +50,17 @@ h6 {
 
 @media (max-width: 1199px) {
   #main {
-    padding: 20px;
+    padding: 0px;
+    margin-top: 0px;
   }
-  .header{
+
+  .sidebar {
+    top: 130px !important;
+    width: 100% !important;
+    left: 0px !important;
+  }
+
+  .header {
     background: rgba(37, 48, 97, 1) !important;
     height: 126px !important;
     width: 100%;
@@ -598,17 +606,19 @@ h6 {
 .header-nav .profile .dropdown-item:hover {
   background-color: #f6f9ff;
 }
+
 .sidebar-nav .nav-item.active {
   background-color: rgba(16, 114, 67, 1);
   color: #fff;
 }
+
 /*--------------------------------------------------------------
 # Sidebar
 --------------------------------------------------------------*/
 .sidebar {
   position: fixed;
   top: 60px;
-  left: 0;
+  left: 0px;
   bottom: 0;
   width: 280px;
   z-index: 996;
@@ -622,24 +632,25 @@ h6 {
 }
 
 @media (max-width: 1199px) {
-  .sidebar {
-    left: -300px;
-  }
+
   .header-nav .nav-icon {
     font-size: 22px;
     color: #fff;
     margin-right: 0;
     position: relative;
   }
-  .logo img{
-    max-width:200px !important;
-    max-height:200px !important;
+
+  .logo img {
+    max-width: 200px !important;
+    max-height: 200px !important;
   }
-  .toggle-sidebar-btn{
+
+  .toggle-sidebar-btn {
     color: #fff !important;
-    padding: 0!important;
-
-
+    padding: 0 !important;
+  }
+  .toggle-sidebar-btn svg {
+    height:140px;
   }
 }
 
@@ -781,7 +792,8 @@ h6 {
   right: 0px;
   top: 15px;
 }
-filter-button {
+
+.filter-button {
   margin-left: 10px;
 }
 
@@ -799,6 +811,7 @@ filter-button {
 .btn-filter svg {
   margin-right: 5px;
 }
+
 .dashboard .filter .icon {
   color: #aab7cf;
   padding-right: 20px;

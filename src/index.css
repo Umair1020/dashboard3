@@ -171,4 +171,27 @@ body {
     }
   }
   
-  
+/* Add this CSS to your existing stylesheet or in a style tag */
+/* Customize scrollbar styles */
+::-webkit-scrollbar {
+   width: 12px; /* Width of the scrollbar */
+   background-color: rgba(37, 48, 97, 1); /* Background color of the scrollbar */
+ }
+ 
+ /* Handle of the scrollbar */
+ ::-webkit-scrollbar-thumb {
+   background-color: rgba(255, 255, 255, 0.5); /* Color of the scrollbar handle */
+   border-radius: 6px; /* Rounded corners of the scrollbar handle */
+ }
+ 
+ /* Track of the scrollbar */
+ ::-webkit-scrollbar-track {
+   background: transparent; /* Background color of the scrollbar track */
+ }
+ 
+ /* Set the height of the scrollbar container based on content */
+ .scrollable-container {
+   max-height: 400px; /* Set your desired maximum height */
+   overflow-y: auto; /* Enable vertical scrollbar */
+ }
+ 

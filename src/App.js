@@ -10,13 +10,14 @@ import SelfApplied from './pages/SelfApplied';
 import OurMaid from './pages/OurMaid';
 import PlantedInterview from './pages/PlantedInterview';
 import AccessPage from './pages/AccessPage';
+import HomeCollapeseVersion from './pages/Demo';
 
 function App() {
   return (
     <div className="">
  
         <Routes>
-          <Route path="/" element={<Demo />} />
+          <Route path="/" element={<HomeCollapeseVersion />} />
           <Route path="/agentrequest" element={<Agentrequest />} />
            <Route path="/selfapplied" element={<SelfApplied />} />
            <Route path="/ourmaid" element={<OurMaid />} />

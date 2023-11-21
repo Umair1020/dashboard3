@@ -41,32 +41,14 @@ const Sidebar = () => {
         if (location.pathname === '/') {
             return (
                 <ul className="d-flex align-items-center">
-                    <li className="nav-item d-block d-lg-none">
-                        {/* ... */}
-                    </li>
-                    <li className="nav-item dropdown">
-                        {/* ... */}
-                    </li>
-                    {/* Add other items for the home route */}
-                    <li className="nav-item">
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li className="nav-item">
-                        <span>&gt;</span>
-                    </li>
-                    {/* Add other necessary navigation items */}
+              
                 </ul>
             );
         } else if (location.pathname === '/agentrequests') {
             return (
                 <ul className="d-flex align-items-center">
                     {/* ... */}
-                    <li className="nav-item">
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li className="nav-item">
-                        <span>&gt;</span>
-                    </li>
+                 
                     <li className="nav-item">
                         <Link to="/agentrequests">Agent Requests</Link>
                     </li>
@@ -83,11 +65,8 @@ const Sidebar = () => {
                 <li className="nav-item">
                     <Link to="/">Home</Link>
                 </li>
-                <li className="nav-item">
-                    <span>&gt;</span>
-                </li>
-                {/* Add a default link for unknown routes */}
-                <li className="nav-item">
+                
+                <li className="nav-item" style={{listStyle: "none"}}>
                     <Link to={location.pathname}>{location.pathname.slice(1)}</Link>
                 </li>
                 {/* Add other items for default/unknown routes */}
@@ -134,7 +113,7 @@ const Sidebar = () => {
     return (
         <div>
             <Desktop>
-                <header id="header" className={`header fixed-top d-flex align-items-center ${isSidebarOpen ? 'sidebar-open' : ''}`}>
+                <header id="header" className={`header fixed-top d-flex align-items-center ${isSidebarOpen ? 'sidebar-open' : ''}`} style={{position: "fixed"}}>
                     <div className="d-flex align-items-center justify-content-between" style={{ width: "24%" }}>
                         <a href="index.html" className="logo d-flex align-items-center" style={{ background: "rgba(37, 48, 97, 1)", height: "64px" }}>
                             <img className='mx-auto' src="/logo.png" alt="" />
@@ -193,7 +172,7 @@ const Sidebar = () => {
                                     to="/"
                                     className="nav-link"
                                     onClick={() => handleSetActiveLink('home')}
-                                    style={{ textDecoration: "none", display: "flex", alignItems: "center" }}
+                                    style={{ textDecoration: "none", display: "flex", alignItems: "center", color: "#000" }}
                                 >
                                     <Home />
                                     <span style={{ marginLeft: "15px" }}>Home</span>
@@ -267,7 +246,7 @@ const Sidebar = () => {
                 )}
             </Desktop>
             <Mobile>
-                <div className="my-0 mx-[!important] absolute top-[0px] left-[0px] bg-maincolors-algawali-primary-2 shadow-[0px_2px_6px_rgba(0,_7,_38,_0.32)] w-[100%] h-[150px] flex flex-col items-start justify-start p-4 box-border gap-[8px] z-[1] text-center text-3xs text-neutral-whitepure">
+                <div className="my-0 mx-[!important] absolute top-[0px] left-[0px] bg-maincolors-algawali-primary-2 shadow-[0px_2px_6px_rgba(0,_7,_38,_0.32)] w-[100%] h-[150px] flex flex-col items-start justify-start p-4 box-border gap-[8px] z-[1] text-center text-3xs text-neutral-whitepure" style={{position: "fixed"}}>
                     <div className="self-stretch flex flex-row items-center justify-between">
                         <div className="h-14 overflow-hidden flex flex-col items-center justify-center">
                             <img
@@ -295,7 +274,7 @@ const Sidebar = () => {
                                     alt=""
                                     src="/icons3.svg"
                                 /> */}
-                                <BsList className="toggle-sidebar-btn " style={{ marginLeft: "0px" }} onClick={toggleSidebar} />
+                                <BsList className="toggle-sidebar-btn " style={{ marginLeft: "0px" , fontSize: "25px" }} onClick={toggleSidebar} />
 
                                 <div className="my-0 mx-[!important] absolute top-[-1px] right-[-1px] rounded-20xl bg-maincolors-algawali-secondry-color-dark flex flex-row items-center justify-center py-1 px-2 opacity-[0] z-[1] border-[1px] border-solid border-maincolors-algawali-background-color">
                                     <div className="relative tracking-[0.02em] leading-[140%] font-medium">
@@ -317,7 +296,7 @@ const Sidebar = () => {
                             </div>
                             <div className="flex flex-row items-start justify-start py-2 px-0 text-neutral-whitepure">
                                 <div className="relative tracking-[0.02em] leading-[136%] font-medium">
-                                    Agents Requests
+                                {renderNavigation()}
                                 </div>
                             </div>
                         </div>
@@ -327,15 +306,15 @@ const Sidebar = () => {
                     <aside id="sidebar" className={`sidebar`} style={{ height: 'auto', overflowY: 'auto', background: "rgba(242, 245, 255, 1)" }}>
                         <br />
                         <img className='mx-auto my-3' src='/user.png' alt="User" />
-                        <h3 className='mx-auto fw-bold'>Mark Smith</h3>
-                        <p className='mx-auto'>Admin/Staff Member</p>
+                        <h3 className='text-dark mx-auto fw-bold'>Mark Smith</h3>
+                        <p className='text-dark mx-auto'>Admin/Staff Member</p>
                         <ul className="sidebar-nav mx-auto my-4" id="sidebar-nav">
                             <li className={`nav-item ${activeLink === 'home' ? 'active' : ''}`}>
                                 <Link
                                     to="/"
                                     className="nav-link"
                                     onClick={() => handleSetActiveLink('home')}
-                                    style={{ textDecoration: "none", display: "flex", alignItems: "center" }}
+                                    style={{ textDecoration: "none", display: "flex", alignItems: "center", color: "#000" }}
                                 >
                                     <Home />
                                     <span style={{ marginLeft: "15px" }}>Home</span>

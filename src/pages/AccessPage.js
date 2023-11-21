@@ -331,7 +331,7 @@ const AccessPage = () => {
                             </div>
                         </div>
                         <div className="rounded-corner-radius-12-round bg-neutral-whitepure shadow-[0px_4px_12px_rgba(3,_12,_50,_0.16)] overflow-hidden flex flex-col items-start justify-center p-4 box-border min-w-[256px] text-center">
-                            <div className="flex flex-col items-start justify-start">
+                            <div className="flex flex-col  justify-start">
                                 <div className="self-stretch flex flex-col items-start justify-center gap-[8px]">
                                     <div className="flex flex-col items-start justify-center gap-[8px]">
                                     <img
@@ -371,7 +371,7 @@ const AccessPage = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="self-stretch flex flex-row items-start justify-center gap-[16px] text-3xs text-neutral-whitepure">
+                                    <div className="self-stretch flex flex-row  justify-center gap-[16px] text-3xs text-neutral-whitepure">
                                         <div className="rounded-corner-radius-16-round-2 bg-neutral-300 flex flex-row items-start justify-start p-3 relative gap-[10px]">
                                         <img
                                                     className="relative w-10 h-10 overflow-hidden shrink-0 z-[0]"
